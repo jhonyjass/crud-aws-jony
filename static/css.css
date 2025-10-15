@@ -1,0 +1,121 @@
+body {
+    background: linear-gradient(135deg, #f8f9fa 0%, #eef1f7 100%);
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.navbar {
+    background: linear-gradient(90deg, #007bff 0%, #0056d2 100%);
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.15);
+}
+
+.navbar-brand {
+    font-weight: 700;
+    letter-spacing: 0.5px;
+    display: flex;
+    align-items: center;
+}
+
+.navbar-brand i {
+    font-size: 1.3rem;
+}
+
+main.container {
+    flex: 1;
+    margin-top: 2rem;
+    animation: fadeIn 0.4s ease-in-out;
+}
+
+footer {
+    background-color: #f8f9fa;
+    border-top: 1px solid #dee2e6;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*----------------------------------------------------------------------------
+Botones
+----------------------------------------------------------------------------*/
+.btn {
+    border-radius: 10px;
+    padding: 0.30rem 0.5rem;
+    font-size: 0.785rem;
+    line-height: 1.4;
+}
+
+/*----------------------------------------------------------------------------
+  Fin botones
+----------------------------------------------------------------------------*/
+
+
+
+
+
+
+/*----------------------------------------------------------------------------
+Alerta mensajes
+----------------------------------------------------------------------------*/
+
+/* Contenedor que envolvera la alertas dentro del contenido */
+.content {
+    position: relative;
+    overflow: hidden;
+}
+
+/* alerta flotante */
+.alert-sonner {
+    position: absolute;
+    top: 30px;
+    /*bottom: 30px;*/
+    left: 50%;
+    transform: translateX(-50%);
+    width: fixed;
+    padding: 15px 20px;
+    font-size: 14px;
+    border-radius: 10px;
+    opacity: 0.9;
+    /* encima de otros elementos */
+    z-index: 1050;
+    animation: slideIn 0.5s ease-out;
+}
+
+/* Animacion para la alerta */
+@keyframes slideIn {
+    from {
+        transform: translateY(-55px) translateX(-50%);
+        opacity: 0;
+    }
+
+    to {
+        transform: translateY(0) translateX(-50%);
+        opacity: 1;
+    }
+}
+
+
+.alert-sonner i {
+    font-size: 18px;
+}
+
+/* Estilo para cerrar la alerta */
+.alert-sonner .btn-close {
+    opacity: 0.7;
+}
+
+
+/*----------------------------------------------------------------------------
+Fin Alerta mensajes
+----------------------------------------------------------------------------*/
